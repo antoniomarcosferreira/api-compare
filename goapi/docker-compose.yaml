@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  go_api:
+    build: .
+    image: apitest/go
+    ports:
+      - 9000:9000
+    volumes:
+      - .:/app
