@@ -1,0 +1,19 @@
+version: '3'
+services:
+  api:
+    image: apitest/node
+    build: .
+    networks:
+      - backend
+    ports:
+      - "7000:7000"
+
+  # web-cli:
+  #   image: apitest/node
+  #   networks:
+  #     - backend
+  #   command: sh
+
+networks:
+  backend:
+    driver: bridge

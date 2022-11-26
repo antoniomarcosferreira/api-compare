@@ -1,0 +1,56 @@
+{
+    "request_count": 1000,
+    "load_type": "linear",
+    "duration": 2,
+    "output": "stdout",
+    "steps": [
+        {
+            "id": 1,
+            "name": "Go",
+            "url": "http://localhost:9000/",
+            "protocol": "http",
+            "method": "GET",
+            "timeout": 3
+        },
+        {
+            "id": 2,
+            "name": "Rust",
+            "url": "http://localhost:2000/",
+            "protocol": "http",
+            "method": "GET",
+            "timeout": 3
+        },
+        {
+            "id": 3,
+            "name": "Java",
+            "url": "http://localhost:8080/",
+            "protocol": "http",
+            "method": "GET",
+            "timeout": 3
+        },
+        {
+            "id": 4,
+            "name": "Nodejs Express",
+            "url": "http://localhost:7000/",
+            "protocol": "http",
+            "method": "GET",
+            "timeout": 3
+        },
+        {
+            "id": 5,
+            "name": "Python flask",
+            "url": "http://localhost:5000/",
+            "protocol": "http",
+            "method": "GET",
+            "timeout": 3
+        },
+        {
+            "id": 6,
+            "name": "Ruby on Rails",
+            "url": "http://localhost:3000/home/",
+            "protocol": "http",
+            "method": "GET",
+            "timeout": 3
+        }
+    ]
+}
