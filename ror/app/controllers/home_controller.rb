@@ -22,7 +22,7 @@ class HomeController < ApplicationController
     end
     threads.map(&:join) 
  
-    render json: "RoR balance: #{balance}"
+    render plain: "RoR balance: #{balance}"
   end
 end
 

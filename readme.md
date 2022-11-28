@@ -17,6 +17,8 @@ ___
 
 ### Run the tests
 
+Use the ddosify tool
+
     cd tests
 
 
