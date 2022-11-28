@@ -16,7 +16,7 @@ fn main() {
 
     server.get("sleep100",  middleware! { |_req, _res| 
         thread::sleep(Duration::from_millis(100));
-        "Rust 5*5 = " + (5*5)
+        format!( "Rust 5*5 =  {}", 5*5);
     }); 
 
     server.get("/inc", middleware! { |_request, response| 

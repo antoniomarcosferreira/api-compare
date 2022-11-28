@@ -8,3 +8,23 @@
 **/node_modules
 **/tmp
 **/bundle
+
+
+# Ruby on rails 
+ror/.bundle
+ror/db/*.sqlite3
+ror/db/*.sqlite3-*
+ror/log/*
+ror/tmp/*
+!/ror/log/.keep
+!/ror/tmp/.keep
+ror/tmp/pids/*
+!/ror/tmp/pids/
+!/ror/tmp/pids/.keep
+/storage/*
+!/ror/storage/.keep
+ror/tmp/storage/*
+!/ror/tmp/storage/
+!/ror/tmp/storage/.keep
+ror/public/assets
+ror/config/master.key
