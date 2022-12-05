@@ -10,7 +10,7 @@
             "url": "http://localhost:9000/sleep100",
             "protocol": "http",
             "method": "GET",
-            "timeout": 3
+            "timeout": 20
         },
         {
             "id": 2,
@@ -18,7 +18,7 @@
             "url": "http://localhost:2000/sleep100",
             "protocol": "http",
             "method": "GET",
-            "timeout": 3
+            "timeout": 20
         },
         {
             "id": 3,
@@ -26,7 +26,7 @@
             "url": "http://localhost:8080/sleep100",
             "protocol": "http",
             "method": "GET",
-            "timeout": 3
+            "timeout": 20
         },
         {
             "id": 4,
@@ -34,7 +34,7 @@
             "url": "http://localhost:7000/sleep100",
             "protocol": "http",
             "method": "GET",
-            "timeout": 3
+            "timeout": 20
         },
         {
             "id": 5,
@@ -42,7 +42,7 @@
             "url": "http://localhost:5000/sleep100",
             "protocol": "http",
             "method": "GET",
-            "timeout": 3
+            "timeout": 20
         },
         {
             "id": 6,
@@ -50,7 +50,7 @@
             "url": "http://localhost:3000/home/sleep100",
             "protocol": "http",
             "method": "GET",
-            "timeout": 3
+            "timeout": 20
         }
     ]
 }

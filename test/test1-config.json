@@ -3,19 +3,18 @@
     "load_type": "linear",
     "duration": 2,
     "output": "stdout",
-    "steps": [
+    "steps": [ 
         {
             "id": 1,
-            "name": "Go",
-            "url": "http://localhost:9000/",
+            "name": "Rust",
+            "url": "http://localhost:2000/",
             "protocol": "http",
             "method": "GET",
             "timeout": 3
-        },
-        {
+        },{
             "id": 2,
-            "name": "Rust",
-            "url": "http://localhost:2000/",
+            "name": "Go",
+            "url": "http://localhost:9000/",
             "protocol": "http",
             "method": "GET",
             "timeout": 3
