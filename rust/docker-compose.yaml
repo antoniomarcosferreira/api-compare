@@ -2,7 +2,7 @@ version: "3.9"
 services:
   go_api:
     build: .
-    image: apitest/rust
+    image: api-service
     ports:
       - 2000:2000
     volumes:
