@@ -6,16 +6,16 @@
     "steps": [
         {
             "id": 1,
-            "name": "Go",
-            "url": "http://localhost:9000/sleep100",
+            "name": "Rust",
+            "url": "http://localhost:2000/sleep100",
             "protocol": "http",
             "method": "GET",
             "timeout": 2
         },
         {
             "id": 2,
-            "name": "Rust",
-            "url": "http://localhost:2000/sleep100",
+            "name": "Go",
+            "url": "http://localhost:9000/sleep100",
             "protocol": "http",
             "method": "GET",
             "timeout": 2

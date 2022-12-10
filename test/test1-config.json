@@ -11,7 +11,8 @@
             "protocol": "http",
             "method": "GET",
             "timeout": 3
-        },{
+        },
+        {
             "id": 2,
             "name": "Go",
             "url": "http://localhost:9000/",
