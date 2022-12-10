@@ -1,22 +1,18 @@
-############################
-# STEP 1 build executable binary
-############################
-FROM golang:alpine AS builder
-# Install git.
-# Git is required for fetching the dependencies.
-RUN apk update && apk add --no-cache git
-WORKDIR $GOPATH/src/mypackage/myapp/
+FROM golang:latest AS buildergo
+# Move to working directory (/build).
+WORKDIR /build
+# Copy and download dependency using go mod.
+COPY go.mod go.sum ./
+RUN go mod download
+# Copy the code into the container.
 COPY . .
-# Fetch dependencies.
-# Using go get.
-RUN go get -d -v
-# Build the binary.
-RUN go build -o /go/bin/hello
-############################
-# STEP 2 build a small image
-############################
+# Set necessary environment variables needed for our image and build the API server.
+ENV CGO_ENABLED=0 GOOS=linux GOARCH=amd64
+RUN go build -ldflags="-s -w" -o apiserver .
+
+
 FROM scratch
-# Copy our static executable.
-COPY --from=builder /go/bin/hello /go/bin/hello
-# Run the hello binary.
-ENTRYPOINT ["/go/bin/hello"]
+# Copy binary and config files from /build to root folder of scratch container.
+COPY --from=buildergo ["/build/apiserver", "/build/.env", "/"]
+# Command to run when starting the container.
+ENTRYPOINT ["/apiserver"]
